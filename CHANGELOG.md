@@ -1,3 +1,46 @@
+### v1.4.1 - Jun 6, 2017
+- Contributed by @AhsanAyaz
+  - Fixed Bug: when `and` was nested inside `or`, the ES query was built incorrectly (#93, #99 and #100)
+    - Many thanks to @aquid for jumping in multiple times and offering valuable advice during code reviews.
+
+### v1.4.0 - Apr 23, 2017
+- contributed by @wolfgang-s
+  - add support for ES 5.x (PR #87 and PR #89)
+
+### v1.3.5 - March 7, 2017
+- Fixed Issue - Remove refresh option for unsupported methods
+  - This issue was fixed in PR #86
+  
+### v1.3.4 - Feb 25, 2017
+- Fixed Issue #79  - Wait until the document is ready for searching
+  - this issue was fixed in PR #81
+- Fixed Issue #85  - Update All for es2.3 and above
+  - this issue was fixed in PR #84
+    
+### v1.3.3 - Feb 23, 2017
+- Fixed Issue #79  - Multiple where clause filter support without `and` filter
+  - this issue was fixed in PR #78
+- Fixed Issue #73  - Nested and, or filter support added
+  - this issue was fixed in PR #75
+- Fixed Issue #73  - `inq`,`nin`,`between`,`neq` filter support added
+  - this issue was fixed in PR #75
+- Fixed Issue #28 - Include filter added
+  - Minimum workflow to make include filter work until we optimize it for better performance.
+    This issue was fixed in PR #71
+    
+### v1.3.2 - Jan 31, 2017
+- Fixed Issue #64  - Date strings were not returned as Javascript Data objects
+  - this issue was fixed in PR #68
+- Fixed Issue #37 - MakeId refactoring applied for save method
+  - Save method still had an old implementation of makeId method which was updated with
+    getDocumentId method. This issue was fixed in PR #69
+- Fixed Issue - Objects inside an array were returned as strings
+  - This issue was fixed in PR #70
+
+### v1.3.1 - Dec 02, 2016
+- Fixed Regression - analyzers for index weren't being created anymore
+  - originally this was added in #25 and got lost somewhere along the way
+
 ### v1.3.0 - Oct 17, 2016
 - contributed by @dtomasi
   - Issue #57: Fix for defaultSize setting
